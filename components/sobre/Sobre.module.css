@@ -1,4 +1,50 @@
 .sobre {
-  display: flex;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(18, 3.75rem);
+  grid-template-rows: 8.75rem 62.5rem 8.75rem;
+  gap: 40px;
+}
+
+.infoContainer {
+  grid-column: 3/10;
+  grid-row: 2;
+  margin-top: 58px;
+}
+
+.foto {
+  grid-column: 11/18;
+  grid-row: 2;
+  height: 65.813rem;
+  width: 45.688rem;
+  border-radius: 10px;
+}
+
+.fotoDec {
+  background-color: #933FCF;
+  height: 696px;
+  width: 52.5vw;
+  margin-top: 186px;
+  grid-column: 10/18;
+  grid-row: 2;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.titulo {
+  text-align: center;
+  font-family: var(--type-second);
+  font-size: 3.25rem;
+  line-height: 78px;
+}
+
+.descricao {
+  font-size: 2rem;
+  color: #232323;
+  font-family: var(--type-third);
+  line-height: 44px;
+  margin-top: 100px;
+  font-weight: 300;
+}
+
+.sobre span {
+  color: #933FCF;;
 }
