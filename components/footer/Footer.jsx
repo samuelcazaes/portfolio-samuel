@@ -11,7 +11,6 @@ import EmailIcon from '../../img/icons/email.svg?react'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContainer}>
         <div className={styles.netInfo}>  
         <a href="" className={styles.logo}><Logo/></a>  
          <a className= {`${styles.InfoItem} ${styles.linkedIn}`} href=""><LinkedInLogo/> www.linkedin.com/samuelcazaes</a>
@@ -22,7 +21,6 @@ const Footer = () => {
          <a className= {`${styles.InfoItem} ${styles.email}`} href="">www.linkedin.com/samuelcazaes <EmailIcon/></a>
          <a className= {`${styles.InfoItem} ${styles.telefone}`} href="">www.linkedin.com/samuelcazaes <TelefoneIcon/></a>
         </div>
-      </div>
     </footer>
   )
 }

@@ -11,8 +11,7 @@ body {
   --type-second: 'Poppins', Georgia;
   --type-third: 'Roboto', Georgia;
   font-family: var(--type-second);
-  flex-flow: column;
-  padding-top: 8.75rem;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,p {
@@ -39,6 +38,23 @@ a {
   text-decoration: none;
   color: white;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #101010;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #A97EE0;    /* color of the scroll thumb */
+  border-radius: 5px;       /* roundness of the scroll thumb */
+  border: 2px solid #232323;  /* creates padding around scroll thumb */
+}
+
+
+
 .App {
   display: flex;
   flex-direction: column;
