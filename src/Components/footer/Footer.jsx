@@ -1,10 +1,10 @@
 import styles from '../footer/Footer.module.css'
 import React from 'react'
-import Logo from '../../img/logo/Footer/samuelcazaes.svg?react'
-import GitHubLogo from '../../img/logo/Footer/github.svg?react'
-import LinkedInLogo from '../../img/logo/Footer/linkedin.svg?react'
-import TelefoneIcon from '../../img/icons/telefone.svg?react'
-import EmailIcon from '../../img/icons/email.svg?react'
+import Logo from '../../Assets/logo/Footer/samuelcazaes.svg?react'
+import GitHubLogo from '../../Assets/logo/Footer/github.svg?react'
+import LinkedInLogo from '../../Assets/logo/Footer/linkedin.svg?react'
+import TelefoneIcon from '../../Assets/icons/telefone.svg?react'
+import EmailIcon from '../../Assets/icons/email.svg?react'
 
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../components/header/Header.jsx'
+import Header from './Components/header/Header.jsx'
 import './App.css'
-import Sobre from '../components/sobre/Sobre.jsx'
-import Footer from '../components/footer/Footer.jsx'
+import Sobre from './Components/sobre/Sobre.jsx'
+import Footer from './Components/footer/Footer.jsx'
 
 const App = () => {
   return (

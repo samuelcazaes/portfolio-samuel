@@ -1,5 +1,5 @@
 import styles from "./Sobre.module.css"
-
+import Foto from "../../Assets/imagens/Sobre/Panda.jpg"
 const Sobre = () => {
   return (
     <section className={styles.sobre}>
@@ -9,7 +9,7 @@ const Sobre = () => {
       </div>
       <div className={styles.fotoDec}>
       </div>  
-      <img className={styles.foto} src="../../img/imagens/Sobre/Panda.jpg" alt="" />
+      <img className={styles.foto} src={Foto} alt="" />
       
     </section>
 
