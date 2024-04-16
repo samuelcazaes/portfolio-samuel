@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  /* font-size: clamp(12px, calc(0.6vw + 0.4rem), 16px); */
 }
 
 body {
@@ -11,7 +12,6 @@ body {
   --type-second: 'Poppins', Georgia;
   --type-third: 'Roboto', Georgia;
   font-family: var(--type-second);
-  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,p {
@@ -22,11 +22,6 @@ ul, li {
   list-style: none;
   margin: 0px;
   padding: 0px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 button,input {
@@ -53,7 +48,10 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #232323;  /* creates padding around scroll thumb */
 }
 
-
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .App {
   display: flex;
@@ -64,3 +62,4 @@ body::-webkit-scrollbar-thumb {
 .AppBody {
   flex: 1;
 }
+
