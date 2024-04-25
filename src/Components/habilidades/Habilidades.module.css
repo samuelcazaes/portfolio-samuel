@@ -62,7 +62,6 @@
   width: 777px;
   height: 460px;
   border-radius: 50px;
-  gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -76,6 +75,11 @@
   height: 103px;
   background-color: #f1f1f1;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.habilidadeContainer:hover {
+  transform: scale(1.2);
 }
 
 .oracleContainer, .kotlinContainer, .discordContainer, .canvaContainer,.gitHubContainer {
@@ -104,4 +108,113 @@
 .uiUx {
   justify-self: center;
   align-self: center;
+}
+
+@media(max-width: 1800px) {
+  .boxesContainer {
+    padding: 70px;
+  }
+}
+
+@media(max-width: 1750px) {
+  .boxesContainer {
+    padding: 50px;
+  }
+}
+
+@media(max-width: 1700px) {
+  .boxesContainer {
+    padding: 104px;
+  }
+  .habilidadesContainer {
+    width: 700px;
+  }
+  .subtitulo:before {
+    left: 212px;
+  }
+  .uiUxSubtitulo::after{
+    left: 111px;
+  }
+}
+
+@media(max-width: 1650px) {
+  .boxesContainer {
+    padding: 80px;
+  }
+}
+
+@media(max-width: 1600px) {
+  
+  .boxesContainer {
+    padding: 90px;
+  }
+
+  .habilidadesContainer {
+    width: 650px;
+  }
+
+  .subtitulo:before {
+    left: 190px;
+  }
+
+  .uiUxSubtitulo::after {
+    left: 90px;
+  }
+}
+
+@media(max-width: 1550px) {
+  .boxesContainer {
+    padding: 90px;
+  }
+}
+
+@media(max-width: 1500px) {
+  .boxesContainer {
+    padding: 50px;
+  }
+}
+
+@media(max-width: 1405px) {
+  .boxesContainer {
+    padding: 104px;
+  }
+
+  .habilidadesContainer {
+    width: 550px;
+    height: 450px;
+  }
+
+  .habilidadeContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .habilidadeLogo {
+    max-width: 70%;
+  }
+
+  .subtitulo, .uiUxSubtitulo {
+    font-size: 2.5rem;
+  }
+
+  .subtitulo::before{
+    left: 156px;
+    top: 13px;
+  }
+
+  .uiUxSubtitulo::after {
+    left: 40px;
+  }
+}
+
+@media(max-width: 1330px) {
+  .boxesContainer {
+    padding: 80px;
+  }
+}
+
+@media(max-width: 1290px) {
+  .boxesContainer {
+    padding: 60px;
+  }
 }
