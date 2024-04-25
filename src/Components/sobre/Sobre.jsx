@@ -16,9 +16,7 @@ const Sobre = () => {
           </div>  
         </div>
       </div>
-      
     </section>
-
   )
 }
 
