@@ -6,7 +6,6 @@
   gap: 100px;
 }
 
-
 /* ~~~~ Coluna Esquerda */
 
 .leftBox {
@@ -82,6 +81,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: animeRight 0.5s forwards;
 }
 
 .miniatureBox img {
@@ -116,7 +118,6 @@
   top: 90px;
 }
 
-
 .descriptions {
   display: flex;
   flex-direction: column;
@@ -145,4 +146,44 @@
   font-weight: 500;
   color: #DEC5FE;
   margin-top: 10px;
+}
+
+/* Animações */
+.descriptions p {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.5s forwards;
+}
+
+.textBox h2 {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: animeRight 0.5s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes animeRight {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+/* Projetos Selecionados */
+
+.selected {
+  border: 5px solid #6B18A7;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.selectedTitle {
+  color: #6b18A7 !important;
+  transition: 0.2s;
 }

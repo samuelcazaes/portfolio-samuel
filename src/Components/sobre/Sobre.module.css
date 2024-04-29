@@ -28,6 +28,9 @@
   line-height: 78px;
   width: 100%;
   padding-bottom: 58px;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: animeRight 1s forwards;
 }
 .sobre span {
   color: #933FCF;;
@@ -40,7 +43,24 @@
   font-family: var(--type-third);
   line-height: 44px;
   font-weight: 300;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 1s forwards;
 }
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+@keyframes animeRight {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
 
 .descricao {
   margin-bottom: 20px;
