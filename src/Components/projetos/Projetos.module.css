@@ -44,6 +44,8 @@
   max-width: 100%;
   max-height: 100%;
   border-radius: 5px;
+  border: 5px solid transparent;
+  transition: 0.5s;
 }
 
 .projetosItem h1 {
@@ -161,6 +163,12 @@
   animation: animeRight 0.5s forwards;
 }
 
+.miniatureBox img {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: animeRight 0.5s forwards;
+}
+
 @keyframes animeLeft {
   to {
     opacity: 1;
@@ -177,10 +185,11 @@
 
 /* Projetos Selecionados */
 
-.selected {
+.projetosItem .selected {
   border: 5px solid #6B18A7;
   border-radius: 10px;
-  transition: 0.2s;
+  transition: 0.5s;
+  transform: scale(1.05);
 }
 
 .selectedTitle {
