@@ -77,30 +77,30 @@ const Projetos = () => {
           }
           {infoDisplay === 'portfolio' ? 
             <div key={Math.random()} className={styles.descriptions}>
-              <p>O projeto portfólio consiste em ser como um currículo virtual para o desenvolvedor,descrevendo habilidades e as comprovando por meio de uma lista de projetos aqui demonstrados,possibilitando o visitante saber qual fora a participação deste programador nos projetos mencionados com apenas um clique.
+              <p>O projeto portfólio consiste em ser como um currículo virtual para o desenvolvedor, descrevendo habilidades e as comprovando por meio de uma lista de projetos aqui demonstrados, possibilitando o visitante saber qual fora a participação deste programador nos projetos mencionados com apenas um clique.
               </p>
               <p>Este site foi projetado desde o começo visando a excelência, sendo assim ferramentas como o Figma foram necessárias para a prototipação e UI/UX, enquanto sua codificação fora feita em ReactJS e Git para versionamento, aplicando os conhecimentos adquiridos nos cursos concluídos.
               </p>
             </div> 
           : infoDisplay === 'agileTrack' ?
             <div key={Math.random()} className={styles.descriptions}>
-              <p>O projeto Agile Track consiste em ser como um currículo virtual para o desenvolvedor,descrevendo habilidades e as comprovando por meio de uma lista de projetos aqui demonstrados,possibilitando o visitante saber qual fora a participação deste programador nos projetos mencionados com apenas um clique.
+              <p>O projeto Agile Track fora o mais engrandecedor no quesito de ganho de conhecimento Back-End e gerencial para o desenvolvedor, o projeto tem a premissa de um ERP e CRM, possibilitando acompanhar e gerir projetos, tais como colaboradores e fazer extratos, além disso possui ferramentas muito úteis para a gestão, como gráficos de andamento do projeto e horas trabalhadas, burndown, tickets, organização de sistema por cliente (este podendo acessar o aplicativo/site) para que possam usufruir e gerir suas empresas e colaboradores da melhor forma possível.
               </p>
-              <p>Este site foi projetado desde o começo visando a excelência, sendo assim ferramentas como o Figma foram necessárias para a prototipação e UI/UX, enquanto sua codificação fora feita em ReactJS e Git para versionamento, aplicando os conhecimentos adquiridos nos cursos concluídos.
+              <p>Neste site/app o desenvolvedor teve a oportunidade de acompanhar e auxiliar de perto o desenvolvimento desde sua estruturação em uma nova arquitetura utilizada na empresa: A Clean Architecture. Sendo desenvolvido em CSharp e utilizando boas práticas de codificação e paradigmas como SOLID e Clean Code, a API fora construída no padrão Restfull e banco de dados relacional (Microsoft SQL Server) como principal passagem e salvamento de dados, porém ainda sim o desenvolvedor teve a oportunidade de conhecer e auxiliar no desenvolvimento de um sistema de notificações baseado em mensageria RabbitMQ e banco de dados não relacional MongoDB.
               </p>
             </div> 
           : infoDisplay === 'visiteQueluzito' ?
             <div key={Math.random()} className={styles.descriptions}>
-              <p>O projeto Visite Queluzito consiste em ser como um currículo virtual para o desenvolvedor,descrevendo habilidades e as comprovando por meio de uma lista de projetos aqui demonstrados,possibilitando o visitante saber qual fora a participação deste programador nos projetos mencionados com apenas um clique.
+              <p>O projeto Visite Queluzito é um aplicativo de rotas, trilhas, pontos turísticos e de interesse, tais como comércios locais na cidade de Queluzito - Minas Gerais, feito para prefeitura de Queluzito, possibilitando visitantes desfrutarem de um aconchegante e acolhedor passeio.
               </p>
-              <p>Este site foi projetado desde o começo visando a excelência, sendo assim ferramentas como o Figma foram necessárias para a prototipação e UI/UX, enquanto sua codificação fora feita em ReactJS e Git para versionamento, aplicando os conhecimentos adquiridos nos cursos concluídos.
+              <p>A experiência do desenvolvedor para com este app/site fora auxiliar na manutenção e desenvolvimento de novas funcionalidades utilizando API Restfull juntamente de um projeto arquitetado em MvvM (Model-View-View-Model) uma alternativa ao MVC utilizado pela empresa a qual este colaborava, sendo CSharp a linguagem principal para o desenvolvimento e Microsoft SQL Server para banco de dados relacional.
               </p>
             </div> 
           : infoDisplay === 'amarilFranklin' &&
             <div key={Math.random()} className={styles.descriptions}>
-              <p>O projeto Amaril Franklin consiste em ser como um currículo virtual para o desenvolvedor,descrevendo habilidades e as comprovando por meio de uma lista de projetos aqui demonstrados,possibilitando o visitante saber qual fora a participação deste programador nos projetos mencionados com apenas um clique.
+              <p>O projeto Amaril Franklin, feito para a própria corretora, consistiu em não só desenvolver novas funcionalidades como também dar manutenção em sistemas já existentes anteriormente, levando o desenvolvedor a aprender diversas tecnologias as quais este ainda não tinha vivenciado, aqui podemos citar sistemas de área do usuário para auxiliar no acompanhamento de bens e taxas, sistema de rotinas (funções automáticas), extratos, importação e transformação de dados para a exportação de .xml, .pdf e .xlsx, além disso trazendo conhecimentos financeiros básicos de grande valia para o desenvolvedor.
               </p>
-              <p>Este site foi projetado desde o começo visando a excelência, sendo assim ferramentas como o Figma foram necessárias para a prototipação e UI/UX, enquanto sua codificação fora feita em ReactJS e Git para versionamento, aplicando os conhecimentos adquiridos nos cursos concluídos.
+              <p>Estes sistemas foram produzidos e mantidos em diversas tecnologias e arquiteturas, entre as quais o desenvolvedor teve a oportunidade de vivenciar: CSharp, Kotlin, MVC, MvvM, Microsoft SQL Server, Oracle, SpringBoot, BootStrap e Linux (Acessado pelo app Termius). O projeto serviu não só de aprendizado no Back-End mas também no Front-End, já que as telas nas aplicações MVC, eram geridas, mantidas e desenvolvidas pelo Back-End também utilizando BootStrap.
               </p>
             </div>}
         </div>        
