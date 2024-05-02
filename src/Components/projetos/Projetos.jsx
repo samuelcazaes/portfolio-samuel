@@ -69,12 +69,13 @@ const Projetos = () => {
           
         </div>
 
-        <div className={styles.textBox}>         
+        <div className={styles.textBox}>
           {infoDisplay === 'portfolio' ? <h2 key={Math.random()}>Portfólio</h2> 
           : infoDisplay === 'agileTrack' ? <h2 key={Math.random()}>Agile Track</h2>
           : infoDisplay === 'visiteQueluzito' ? <h2 key={Math.random()}>Visite Queluzito</h2>
           : infoDisplay === 'amarilFranklin' && <h2 key={Math.random()}>Amaril Franklin</h2>
           }
+
           {infoDisplay === 'portfolio' ? 
             <div key={Math.random()} className={styles.descriptions}>
               <p>O projeto portfólio consiste em ser como um currículo virtual para o desenvolvedor, descrevendo habilidades e as comprovando por meio de uma lista de projetos aqui demonstrados, possibilitando o visitante saber qual fora a participação deste programador nos projetos mencionados com apenas um clique.
@@ -103,15 +104,33 @@ const Projetos = () => {
               <p>Estes sistemas foram produzidos e mantidos em diversas tecnologias e arquiteturas, entre as quais o desenvolvedor teve a oportunidade de vivenciar: CSharp, Kotlin, MVC, MvvM, Microsoft SQL Server, Oracle, SpringBoot, BootStrap e Linux (Acessado pelo app Termius). O projeto serviu não só de aprendizado no Back-End mas também no Front-End, já que as telas nas aplicações MVC, eram geridas, mantidas e desenvolvidas pelo Back-End também utilizando BootStrap.
               </p>
             </div>}
-        </div>        
-        <a href="">
-          <div className={styles.button}>
-            <span>SAIBA MAIS</span><Setinha/>
-          </div>
-        </a>
+        </div>    
+
+        {infoDisplay === 'portfolio' ? 
+          <a href="#">
+              <div className={styles.button}>
+                <span>SAIBA MAIS</span><Setinha/>
+              </div>
+          </a> 
+          : infoDisplay === 'agileTrack' ? 
+          <a href="https://www.agiletrack.com.br" rel="noreferrer" target="_blank">
+            <div className={styles.button}>
+              <span>SAIBA MAIS</span><Setinha/>
+            </div>
+          </a>
+          : infoDisplay === 'visiteQueluzito' ? 
+          <a href="https://www.visitequeluzito.com.br" rel="noreferrer" target="_blank">
+            <div className={styles.button}>
+              <span>SAIBA MAIS</span><Setinha/>
+            </div>
+          </a>
+          : infoDisplay === 'amarilFranklin' && 
+          <a href="https://www.amarilfranklin.com.br" rel="noreferrer" target="_blank">
+            <div className={styles.button}>
+              <span>SAIBA MAIS</span><Setinha/>
+            </div>
+          </a>}
       </div>
-
-
     </section>
   )
 }
