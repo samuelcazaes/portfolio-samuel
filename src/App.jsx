@@ -6,6 +6,7 @@ import Footer from './Components/footer/Footer.jsx'
 import Habilidades from './Components/habilidades/Habilidades.jsx'
 import Projetos from './Components/projetos/Projetos.jsx'
 import Experiencias from './Components/experiencias/Experiencias.jsx'
+import Formacoes from './Components/formacoes/Formacoes.jsx'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Habilidades/>
         <Projetos/>
         <Experiencias/>
+        <Formacoes/>
       </main>
       <Footer/>
     </div>

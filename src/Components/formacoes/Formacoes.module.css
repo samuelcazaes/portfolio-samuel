@@ -1,0 +1,90 @@
+.formacoes {
+  background-color: #101010;
+  padding: 160px;
+}
+
+.formacaoTitulo {
+  font-family: var(--type-second);
+  font-weight: 700;
+  font-size: 3.25rem;
+  color: #f1f1f1;
+  text-align: center;
+
+}
+
+.formacaoTitulo span {
+  color: #933FCF;
+}
+
+.formacoesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Formação Academica */
+
+.formacaoAcademica {
+  display: flex;
+  flex-direction: column;
+}
+
+.formacaoAcademicaTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 160px;
+}
+
+.formacaoAcademicaTitle svg {
+  height: 60px;
+}
+
+.formacaoAcademicaTitle h1 {
+  color: #e9e9e9;
+  font-weight: 500;
+  font-family: var(--type-second);
+  letter-spacing: 0.78px;
+}
+
+.formacaoAcademicaBox {
+  display: flex;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  width: 1200px;
+  height: 338px;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.formacaoAcademicaInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.formacaoAcademicaInfoLocal {
+  display: flex;
+  gap: 12px;
+}
+
+.formacaoAcademicaInfo span{
+  color: #6B18A7;
+  font-size: 2.5rem;
+}
+
+.formacaoAcademicaInfo h1 {
+  color: #101010;
+  font-weight: 500;
+  letter-spacing: 0.78px;
+}
+
+.formacaoAcademicaInfo h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-left: 39px;
+}
