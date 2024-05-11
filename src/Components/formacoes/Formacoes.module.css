@@ -31,22 +31,23 @@
   flex-direction: column;
 }
 
-.formacaoAcademicaTitle {
+.formacoesTitle {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-top: 160px;
 }
 
-.formacaoAcademicaTitle svg {
+.formacoesTitle svg {
   height: 60px;
 }
 
-.formacaoAcademicaTitle h1 {
+.formacoesTitle h1 {
   color: #e9e9e9;
   font-weight: 500;
   font-family: var(--type-second);
   letter-spacing: 0.78px;
+  font-size: 2rem;
 }
 
 .formacaoAcademicaBox {
@@ -56,7 +57,8 @@
   width: 1200px;
   height: 338px;
   justify-content: space-between;
-  padding: 80px;
+  padding: 60px;
+  margin-top: 40px;
 }
 
 .formacaoAcademicaInfo {
@@ -88,3 +90,123 @@
   font-weight: 400;
   margin-left: 39px;
 }
+
+.decoradores {
+  display: flex;
+  gap: 42px;
+  margin-left: 35px;
+  margin-top: 50px;
+  max-width: 530px;
+}
+
+.formacaoAcademicaData {
+  text-align: right;
+}
+
+.formacaoAcademicaData h2 {
+  color: #707070;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.formacaoAcademicaData span {
+  color: #707070;
+  font-family: var(--type-third);
+}
+
+.extraCurriculares {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.extraCurricularesBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  width: 1200px;
+  padding: 60px;
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.extraCurricularesTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 160px;
+  justify-content: end;
+  color: #e9e9e9;
+}
+
+.extraCurricularesTitle h1{
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.extraCurricularesSchoolTitle {
+  display: flex;
+  gap: 12px;
+}
+
+.extraCurricularesSchoolTitle span{
+  color: #6B18A7;
+  font-size: 2.5rem;
+}
+
+.extraCurricularesSchoolTitle h1{
+  color: #101010;
+  font-weight: 500;
+  letter-spacing: 0.78px;
+}
+
+.extraCurricularesCompetencia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #232323;
+  padding: 14px;
+  border-radius: 10px;
+  position: relative;
+  cursor: default;
+  box-shadow: 3px 3px rgba(0,0,0,0.5);
+  transition: 0.4s;
+}
+
+.extraCurricularesCompetencia h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #d1d1d1;
+  margin-left: 30px;
+}
+
+.extraCurricularesCompetencia h2::before {
+  content: '';
+  width: 6px;
+  height: 24px;
+  background-color: #933FCF;
+  position: absolute;
+  left: 20px;
+  top: 19px;
+}
+
+.extraCurricularesCompetenciasBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.extraCurricularesCompetencia:hover {
+  transform: scale(1.03);
+  transition: 0.4s;
+}
+
+.extraCurricularesCompetencia span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #B65EF5;
+}
+
