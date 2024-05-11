@@ -210,3 +210,76 @@
   color: #B65EF5;
 }
 
+.idiomas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+}
+
+.idiomasTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #e9e9e9;
+}
+
+.idiomasTitle h1{
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.idiomasDecBox {
+  align-items: center;
+  display: flex;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  width: 1200px;
+  padding: 60px;
+  margin-top: 40px;
+  gap: 150px;
+}
+
+.idiomasBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.idioma {
+  display: flex;
+  background-color: #232323;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  width: 581px;
+  box-shadow: 3px 3px rgba(0,0,0,0.5);
+  transition: 0.4s;
+  cursor: default;
+}
+
+.idioma:hover {
+  transform: scale(1.03);
+  transition: 0.4s;
+}
+
+.idioma h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #d1d1d1;
+}
+
+.idioma span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #B65EF5;
+}
+
+.idioma img {
+  width: 69px;
+  height: 48px;
+}
+
+.bigDecorador {
+  margin-top: 10px;
+}

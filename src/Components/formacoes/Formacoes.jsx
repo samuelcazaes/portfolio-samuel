@@ -3,6 +3,10 @@ import styles from './Formacoes.module.css'
 import Decorador from '../../Assets/decoradores/decBolinhas.svg?react'
 import Capelo from '../../Assets/icons/academico.svg?react'
 import ExtraCurri from '../../Assets/icons/extracurriculares.svg?react'
+import Idiomas from '../../Assets/icons/idiomas.svg?react'
+import BandeiraBrasil from '../../Assets/imagens/portugues.png'
+import BandeiraIngles from '../../Assets/imagens/ingles.png'
+import DecBigBolinhas from '../../Assets/decoradores/decBigBolinhas.svg?react'
 
 const Formacoes = () => {
   return (
@@ -77,6 +81,28 @@ const Formacoes = () => {
               <h2>Tipografia Avançada</h2>
               <span>a iniciar - 12 horas</span>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.idiomas}>
+        <div className={styles.idiomasTitle}>
+          <Idiomas/>
+          <h1 className={styles.idiomasTitle}>Idiomas</h1>
+        </div>
+        <div className={styles.idiomasDecBox}>
+          <div className={styles.idiomasBox}>
+            <div className={styles.idioma}>
+            <img src={BandeiraBrasil} alt="" />
+            <h2>Português - Brasileiro | </h2><span>Nativo</span>
+            </div>
+            <div className={styles.idioma}>
+            <img src={BandeiraIngles} alt="" />
+            <h2>Inglês - Americano | </h2><span>Fluente</span>
+            </div>
+          </div>
+          <div className={styles.bigDecorador}>
+            <DecBigBolinhas/>
           </div>
         </div>
       </div>
