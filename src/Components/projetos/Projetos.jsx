@@ -20,9 +20,7 @@ const Projetos = () => {
   const [infoDisplay, setInfoDisplay] = React.useState('portfolio');
 
   return (
-    <section className={`${styles.projetosBox} container`}>
-
-        
+    <section id={'projetos'} className={`${styles.projetosBox} container`}>
       <div className={styles.leftBox}>
         <div className={styles.tipBox}>
         <Tip/>
@@ -55,7 +53,6 @@ const Projetos = () => {
           </div>
         </div>
       </div>
-      
       <div className={styles.rightBox}>
         <div className={styles.detailsBox}>
           <h1 className={styles.detailsProjetosTitle}>projetos<span>.</span></h1>

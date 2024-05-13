@@ -10,7 +10,7 @@ import EmailIcon from '../../Assets/icons/email.svg?react'
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer}`}>
+    <footer id={'contato'} className={`${styles.footer}`}>
         <div className={styles.netInfo}>  
         <a href="" className={styles.logo}><Logo/></a>  
          <a className= {`${styles.InfoItem} ${styles.linkedIn}`} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/samuelcazaes/"><LinkedInLogo/> www.linkedin.com/in/samuelcazaes</a>

@@ -35,6 +35,7 @@
   background-image: linear-gradient(180deg, #7F36B2, #6B18A7 );;
   padding:10px 0px 15px 20px;
   border-radius: 10px;
+  animation: moveLeft 2s infinite;
 }
 
 .projetosItem {
@@ -130,7 +131,7 @@
   flex-direction: column;
   gap: 40px;
   font-family: var(--type-third);
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #525252;
   line-height: 44px;
   font-weight: 400;
@@ -214,6 +215,18 @@
   to {
     opacity: 1;
     transform: initial;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 

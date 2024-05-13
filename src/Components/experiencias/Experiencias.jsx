@@ -5,7 +5,7 @@ import ActivityIcon from '../../Assets/icons/atividades.svg?react'
 import GlobeIcon from '../../Assets/icons/linguagens.svg?react'
 const Experiencias = () => {
   return (
-    <section className={`${styles.experiencias}   container`}>
+    <section id={'experiencias'} className={`${styles.experiencias} container`}>
       <h1 className={styles.sectionTitle}>experiências profissionais<span>.</span></h1>
       <div className={styles.expContainer}>
         <div className={styles.logoContainer}>

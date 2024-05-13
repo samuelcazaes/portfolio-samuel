@@ -1,0 +1,49 @@
+.scrollDiv {
+  height: 80px;
+  width: 80px;
+  background-color: #933FCF;
+  color: white;
+  position: fixed;
+  bottom: 150px;
+  right: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.ativado{
+  opacity: 1;
+  animation: fadeIn 0.5s forwards;
+}
+
+.desativado {
+  opacity: 0;
+  animation: fadeOut 0.5s forwards;
+  pointer-events: none;
+}
+
+.scrollDiv svg {
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

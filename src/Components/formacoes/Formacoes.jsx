@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import styles from './Formacoes.module.css'
 import Decorador from '../../Assets/decoradores/decBolinhas.svg?react'
 import Capelo from '../../Assets/icons/academico.svg?react'
@@ -8,10 +8,11 @@ import BandeiraBrasil from '../../Assets/imagens/portugues.png'
 import BandeiraIngles from '../../Assets/imagens/ingles.png'
 import DecBigBolinhas from '../../Assets/decoradores/decBigBolinhas.svg?react'
 
-const Formacoes = () => {
+
+const Formacoes = (props, ref) => {
   return (
-    <section className={`${styles.formacoes} container`}>
-    
+    // <section ref={ref} id={'formacoes'} className={`${styles.formacoes} container`}>
+    <section id={'formacoes'} className={`${styles.formacoes} container`}>
     <h1 className={styles.formacaoTitulo}>formações<span>.</span></h1>
 
     <div className={styles.formacoesContainer}>
@@ -114,4 +115,4 @@ const Formacoes = () => {
   )
 }
 
-export default Formacoes
+export default forwardRef(Formacoes)
