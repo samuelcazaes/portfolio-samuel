@@ -5,13 +5,18 @@
   color: white;
   position: fixed;
   bottom: 150px;
-  right: 200px;
+  right: 110px;
   border-radius: 50%;
   border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 200;
+  transition: 0.5s;
+}
+
+.scrollDiv:hover {
+  transform: scale(1.2);
 }
 
 .ativado{
@@ -47,3 +52,12 @@
     opacity: 0;
   }
 }
+
+@media(max-width:1500px) {
+  .scrollDiv {
+    right: 50px;
+    height: 70px;
+    width: 70px;
+  }
+}
+

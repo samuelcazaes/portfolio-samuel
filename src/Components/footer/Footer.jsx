@@ -18,8 +18,8 @@ const Footer = () => {
         </div>
         <div className={styles.contactInfo}>    
          <h1>contato<span>.</span></h1>
-         <a className= {`${styles.InfoItem} ${styles.email}`} href="">samuelcazaes@gmail.com<EmailIcon/></a>
-         <a className= {`${styles.InfoItem} ${styles.telefone}`} href="">(31) 9 9919-3389 <TelefoneIcon/></a>
+         <a className= {`${styles.InfoItem} ${styles.email}`} >samuelcazaes@gmail.com<EmailIcon/></a>
+         <a className= {`${styles.InfoItem} ${styles.telefone}`}>(31) 9 9919-3389 <TelefoneIcon/></a>
         </div>
     </footer>
   )
