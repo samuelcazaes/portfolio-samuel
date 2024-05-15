@@ -47,6 +47,7 @@
   padding: 0px;
   gap: 10px;
   margin-top: 39px;
+  cursor: text;
 }
 
 @media(max-width: 1500px) {

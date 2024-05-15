@@ -20,7 +20,7 @@ import Trello from '../../Assets/logo/Habilidades/ui_ux_e_gerenciais/trello.svg?
 
 const Habilidades = () => {
   return (
-    <section className={`${styles.habilidades} container`}>
+    <section id={'habilidades'} className={`${styles.habilidades} container`}>
       <h1 className={styles.titulo}>habilidades<span>.</span></h1>
       <div className={styles.boxesContainer}>
         <div className={`${styles.backEnd} ${styles.boxItem}`}>

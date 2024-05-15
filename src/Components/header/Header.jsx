@@ -8,12 +8,13 @@ const Header = () => {
       <a className={styles.logo}><Logo/></a>
       <nav>
         <ul className={styles.headerMenu}>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Habilidades</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Experiência</a></li>
-          <li><a href="">Formação</a></li>
-          <a href="" className={styles.contato}><li className={styles.contatoBox}><p className={styles.contato}>Contato</p></li></a>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencias">Experiência</a></li>
+          {/* <li><a onClick={() => {props.formacoesRef.current.scrollIntoView()}}href="">Formação</a></li> */}
+          <li><a href="#formacoes">Formação</a></li>
+          <a href="#contato" className={styles.contato}><li className={styles.contatoBox}><p className={styles.contato}>Contato</p></li></a>
         </ul>
       </nav>
     </header>
