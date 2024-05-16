@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfólio - Samuel Cazaes" />
+    <link rel="icon" href="./src/Assets/favicon/FaviconDark.svg" id="favIcon"/>
+
     <title>Samuel Cazaes</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    <!-- <script>
+        const favIcon = document.getElementById("favIcon")
+        const isDark = window.matchMedia("(prefers-color-scheme: dark)")
+        const changeFavicon = () => {
+          if(isDark.matches) favIcon.href = "./src/Assets/favicon/FaviconDark.svg";
+          else favIcon.href = "./src/Assets/favicon/FaviconDark.svg";
+        }
+        changeFavicon();
+      </script> -->
   </body>
 </html>
