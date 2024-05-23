@@ -81,3 +81,64 @@
     padding: 20px;
   }
 }
+
+@media(max-width: 1250px) {
+  
+  .header {
+    padding: 40px;
+    height: auto;
+    display: block;
+    background-color: #232323;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .headerMenu {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo::after {
+    content: '';
+    width: 60vw;
+    height: 4px;
+    background-color: #933FCF;
+    position: absolute;
+    top: 55px;
+    left: 450px;
+  }
+
+  .headerMenu {
+    flex-direction: column;
+  }
+
+  .headerMenu li {
+    padding: 5px 0px;
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .contato {
+    padding: 0px;
+    width: 0%;
+  }
+
+  .contato p {
+    margin-left: 5px;
+  }
+
+  .contatoBox {
+    background-color: #933FCF;
+    border: 2px solid transparent;
+    width: 8vw; 
+  }
+
+  .headerMenu a:not(.logo,.contato, .contatoLink):after {
+    transition: 0.4s;
+  }
+
+  .headerMenu a:not(.logo):hover:after {
+    width: 20vw;
+  }
+}
