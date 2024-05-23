@@ -32,6 +32,7 @@
   transform: translateX(20px);
   animation: animeRight 1s forwards;
 }
+
 .sobre span {
   color: #933FCF;;
 }
@@ -76,6 +77,10 @@
 .decFotoContainer {
   position: relative;
   flex: 1;
+}
+
+.decFotoContainer .titulo {
+  display: none;
 }
 
 .fotoContainer {
@@ -217,5 +222,117 @@
 
   .textContainer {
     padding-bottom: 80px;
+  }
+}
+
+@media(max-width: 1250px) {
+  .sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 80px;
+    margin: 0px;
+    margin-top: 180px;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    flex-wrap: wrap;
+  }
+  
+  .infoContainer {
+    max-width: 80%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .textContainer {
+    padding-left: 30px;
+    max-width: 70vw;
+    padding-bottom: 80px;
+  }
+
+  .textContainer .titulo{
+    display: none;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-family: var(--type-second);
+    font-size: 3.25rem !important;
+    line-height: 78px;
+    width: 100%;
+    padding-bottom: 58px;
+    opacity: 0;
+    transform: translateX(20px);
+    animation: animeRight 1s forwards;
+  }
+  .sobre span {
+    color: #933FCF;;
+  }
+  
+  .descricao, .descricaoDois {
+    width: 100%;
+    font-size: 2rem;
+    color: #232323;
+    font-family: var(--type-third);
+    line-height: 44px;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: animeLeft 1s forwards;
+  }
+  
+  .descricao {
+    margin-bottom: 20px;
+  }
+  
+  .infoDec {
+    position: absolute;
+    background-color: #933FCF;
+    height: 696px;
+    width: 100%;
+    border-radius: 10px 10px 0px 10px;
+  }
+  
+  .decFotoContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .decFotoContainer .titulo {
+    display: block;
+  }
+  
+  .fotoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 731px;
+    height: 100%;
+    width: 80%;
+  }
+  
+  .foto {
+    display: flex;
+    z-index: 100;
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .fotoDec {
+    position: absolute;
+    background-color: #933FCF;
+    max-height: 696px;
+    height: 38vw;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 40px;
   }
 }
