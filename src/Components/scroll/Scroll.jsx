@@ -23,7 +23,7 @@ const Scroll = () => {
 
   return (
     <div onClick={handleScrollToTop} className={`${styles.scrollDiv} ${showTopBtn ? styles.ativado : styles.desativado}`}>
-      <a href="#sobre"><ScrollIcon/></a>
+      <a href="#navbar"><ScrollIcon/></a>
     </div>
   )
 }
