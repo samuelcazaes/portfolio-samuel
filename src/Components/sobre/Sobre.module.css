@@ -188,7 +188,7 @@
   }
 }
 
-@media(max-width: 1380px) {
+/* @media(max-width: 1380px) {
   .sobre {
     margin-left: min(5%,50px);
     gap: 20px;
@@ -223,9 +223,9 @@
   .textContainer {
     padding-bottom: 80px;
   }
-}
+} */
 
-@media(max-width: 1250px) {
+@media(max-width: 1380px) {
   .sobre {
     display: flex;
     flex-direction: column-reverse;
@@ -260,7 +260,7 @@
   .titulo {
     text-align: center;
     font-family: var(--type-second);
-    font-size: 3.25rem !important;
+    font-size: 3rem !important;
     line-height: 78px;
     width: 100%;
     padding-bottom: 58px;
@@ -274,7 +274,7 @@
   
   .descricao, .descricaoDois {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #232323;
     font-family: var(--type-third);
     line-height: 44px;
