@@ -232,7 +232,8 @@
     gap: 80px;
     margin: 0px;
     margin-top: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     justify-content: center;
     align-items: center;
     max-width: 1920px;
@@ -249,7 +250,7 @@
   .textContainer {
     padding-left: 30px;
     max-width: 70vw;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
 
   .textContainer .titulo{
