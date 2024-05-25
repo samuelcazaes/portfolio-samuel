@@ -188,7 +188,8 @@
     background-color: #232323;
     display: flex;
     flex-direction: column;
-    padding: 160px;
+    padding-top: 120px;
+
   }
   
   .sectionTitle {
