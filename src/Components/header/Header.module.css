@@ -75,14 +75,6 @@
 }
 
 @media(max-width: 1300px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-}
-
-@media(max-width: 1250px) {
   
   .header {
     padding: 40px;
@@ -140,5 +132,14 @@
 
   .headerMenu a:not(.logo):hover:after {
     width: 20vw;
+  }
+}
+
+@media(max-width:1150px) {
+  .logo::after {
+    width: 50vw;
+  }
+  .contatoBox {
+    width: 8.5vw; 
   }
 }

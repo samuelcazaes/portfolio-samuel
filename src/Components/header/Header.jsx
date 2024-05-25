@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className={`${styles.header}`}>
+    <header id={'navbar'} className={`${styles.header}`}>
       <a className={styles.logo}><Logo/></a>
       <nav>
         <ul className={styles.headerMenu}>

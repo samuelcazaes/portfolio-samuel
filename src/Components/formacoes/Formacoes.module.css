@@ -283,3 +283,44 @@
 .bigDecorador {
   margin-top: 10px;
 }
+
+@media(max-width: 1300px) {
+
+  .formacoes {
+    padding-top: 120px;
+  }
+
+  .formacaoTitulo {
+    font-size: 3rem;
+  }
+
+  .formacaoAcademicaBox {
+    width: 1100px;
+    height: auto;
+  }
+
+  .formacoesTitle {
+    margin-top: 120px;
+  }
+
+  .extraCurricularesTitle {
+    margin-top: 120px;
+  }
+
+  .extraCurricularesBox {
+    width: 1100px;
+  }
+  
+  .idiomas {
+    margin-top: 120px;
+  }
+
+  .idiomasDecBox {
+    width: 1100px;
+    gap: 60px;
+  }
+
+  .bigDecorador {
+    margin-top: 15px;
+  }
+}
