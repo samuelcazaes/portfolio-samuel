@@ -181,4 +181,15 @@
   .contatoBox:hover {
     border: 2px solid transparent;
   }
+
+  .headerMenu a:not(.logo,.contato, .contatoLink):after {
+    content: '';
+    display: none;
+    height: 2px;
+    width: 0%;
+    background: #933FCF;
+    margin-top: 2px;
+    transition: 0.3s;
+    position:absolute;
+  }
 }
