@@ -337,3 +337,37 @@
     margin-top: 40px;
   }
 }
+
+@media(max-width: 430px) {
+
+  .sobre {
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  .decFotoContainer .titulo {
+    font-size: 2rem !important;
+    font-weight: 500;
+    padding-bottom: 40px;
+  }
+
+  .fotoContainer {
+    max-width: 340px;
+  }
+
+  .fotoDec {
+    margin-top: 10px;
+  }
+
+  .textContainer {
+    padding-left: 0px;
+    max-width: 390px;
+  }
+
+  .descricao, .descricaoDois {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 161.8%;
+    color: #232323;
+  }
+}
