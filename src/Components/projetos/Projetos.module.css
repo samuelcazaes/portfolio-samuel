@@ -817,12 +817,12 @@
 
   .miniatureBox {
     height: 200px;
-    width: 240px;
+    width: auto;
   }
 
   .miniatureBox img {
     max-width: 95%;
-    max-height: 85%;
+    max-height: 95%;
   }
 
   .textBox h2{

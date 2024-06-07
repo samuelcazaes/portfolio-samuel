@@ -273,3 +273,129 @@
     top: 12px
   }
 }
+
+@media(max-width: 430px) {
+
+  /* Seção */
+  .experiencias {
+    padding: 20px;
+  }
+  .sectionTitle {
+    font-size: 1.6rem;
+    padding-top: 20px;
+    text-wrap: nowrap;
+    font-weight: 400;
+  }
+
+  /* Container Exterior */
+  .infoContainer {
+    width: 330px;
+    padding: 12px;
+  }
+
+  .expContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titleContainer h1{
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+    padding-left: 8px;
+    }
+    
+  .titleContainer h1::after {
+    height: 15px;
+    width: 4px;
+    left: -1px;
+    top: 6px;
+  }
+
+  .subTitleInfo h2 {
+    font-size: 0.85rem;
+    font-weight: 500;
+  } 
+  
+  .subTitleInfo span {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .logoContainer {
+    width: 200px;
+    height: auto;
+  }
+
+  .logoContainer img {
+    width: 80%;
+    height: 55%;
+  }
+
+  /* Atividades. */
+  .activityContainer {
+    padding-top: 10px;
+  }
+
+  .activityHeader {
+    gap: 5px;
+  }
+
+  .activityHeader h1{
+    font-size: 1.0rem;
+    font-weight: 500;
+  }
+
+  .activityContainer p {
+    font-size: 0.9rem;
+    line-height: 25px;
+    padding-top: 10px;
+  }
+
+  .activityContainer::after {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    width: 300px;
+    height: 3px;
+  }
+
+  .activityHeader svg {
+    width: auto;
+    height: 26px;
+  }
+
+  /* Linguagens e Ferramentas */
+
+  .skillsHeader {
+    gap: 5px;
+  }
+
+  .skillsHeader h1 {
+    font-size: 1.0rem;
+    font-weight: 500;
+  }
+
+  .skillsHeader svg {
+    width: auto;
+    height: 30px;
+  }
+
+  .skillsBox {
+    margin-top: 15px;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    padding-left: 15px;
+  }
+
+  .skillsBox span {
+    border: none;
+    font-size: 0.8rem;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  .skillsBox::after {
+    display: none;
+  }
+}

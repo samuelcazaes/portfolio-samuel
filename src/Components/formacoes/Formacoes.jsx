@@ -89,7 +89,7 @@ const Formacoes = (props, ref) => {
       <div className={styles.idiomas}>
         <div className={styles.idiomasTitle}>
           <Idiomas/>
-          <h1 className={styles.idiomasTitle}>Idiomas</h1>
+          <h1 className={styles.idiomasTitle}>idiomas</h1>
         </div>
         <div className={styles.idiomasDecBox}>
           <div className={styles.idiomasBox}>
