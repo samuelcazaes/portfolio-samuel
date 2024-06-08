@@ -350,3 +350,60 @@
     max-width: 70%;
   }
 }
+
+@media(max-width: 320px) {
+  .titulo {
+    padding-top: 40px;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .boxesContainer {
+    padding-top: 40px;
+    padding: 40px 20px 0px 20px;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .uiUxBoxesContainer {
+    padding: 0px 20px 60px 20px;
+  }
+
+  .subtitulo, .uiUxSubtitulo {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .habilidadesContainer {
+    width: 90vw;
+    height: 40vw;
+    max-height: 300px;
+    min-height: 100px; 
+    gap: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, #7F36B2, #6B18A7 );
+
+  }
+
+  .habilidadesLineZero, .habilidadesLineOne, .habilidadesLineTwo {
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .frontEnd .habilidadesContainer {
+    max-height: 200px;
+  }
+  
+  .habilidadeContainer {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px; 
+  }
+
+  .habilidadeLogo {
+    max-width: 65%;
+  }
+}

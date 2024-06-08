@@ -193,3 +193,51 @@
     position:absolute;
   }
 }
+
+@media(max-width: 320px) {
+  
+  .header {
+    padding: 20px;
+  }
+
+  .headerMenu {
+    margin-top: 10px;
+    gap: 5px;
+  }
+
+  .headerMenu a {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .logo svg {
+    width: 180px;
+  }
+
+  .logo::after {
+    left: 210px;
+    width: 30vw;
+    height: 3px;
+    top: 28px;
+  }
+
+  .contatoBox {
+    margin-top: 5px;
+    width: 25vw;
+  }
+
+  .contatoBox:hover {
+    border: 2px solid transparent;
+  }
+
+  .headerMenu a:not(.logo,.contato, .contatoLink):after {
+    content: '';
+    display: none;
+    height: 2px;
+    width: 0%;
+    background: #933FCF;
+    margin-top: 2px;
+    transition: 0.3s;
+    position:absolute;
+  }
+}

@@ -37,7 +37,7 @@ const Projetos = () => {
         <Tip/>
         <span>clique nos projetos abaixo para saber mais sobre eles</span>
         </div>
-
+          <h1 className={`${styles.detailsProjetosTitle} ${styles.sectionTitleMobile}`}>projetos<span>.</span></h1>
         { width <= 430 ?
           <div className={styles.projetosItemsBox}>
             <div onClick={() => setInfoDisplay('portfolio')} className={styles.projetosItem}>
@@ -97,7 +97,7 @@ const Projetos = () => {
       
       <div className={styles.rightBox}>
         <div className={styles.detailsBox}>
-          <h1 className={styles.detailsProjetosTitle}>projetos<span>.</span></h1>
+          <h1 className={`${styles.detailsProjetosTitle} ${styles.sectionTitleDesktop}`}>projetos<span>.</span></h1>
         </div>
         <div className={styles.miniatureBox}>
           {infoDisplay === 'portfolio' ? <img key={Math.random()} src={PortfolioMiniature} alt="" />
