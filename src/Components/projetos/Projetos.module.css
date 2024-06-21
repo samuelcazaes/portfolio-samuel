@@ -819,6 +819,10 @@
     padding-bottom: 10px;
   }
 
+  .sectionTitleMobile {
+    display: block;
+  }
+
   
   /* Coluna Direita */
 
@@ -906,7 +910,7 @@
   }
 }
 
-@media(max-width: 320px) {
+@media(max-width: 360px) {
 
   .projetosBox {
     margin-top: 50px;
@@ -972,6 +976,10 @@
   .leftBox {
     margin-top: 40px;
     gap: 40px;
+  }
+
+  .sectionTitleMobile {
+    display: block;
   }
   /* Coluna Direita */
 

@@ -71,6 +71,10 @@ const Formacoes = (props, ref) => {
               <span>completo - 36 horas</span>
             </div>
             <div className={styles.extraCurricularesCompetencia}>
+              <h2>Next.js</h2>
+              <span>completo - 22 horas</span>
+            </div>
+            <div className={styles.extraCurricularesCompetencia}>
               <h2>UI Design para Iniciantes</h2>
               <span>completo - 34 horas</span>
             </div>

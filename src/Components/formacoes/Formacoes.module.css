@@ -625,3 +625,317 @@
     display: none;
   }
 }
+
+@media(max-width: 360px) {
+  .formacoes {
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .formacaoTitulo {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .formacoesTitle h1 {
+    color: #e9e9e9;
+    font-weight: 400;
+    font-family: var(--type-second);
+    letter-spacing: 0.78px;
+    font-size: 1rem;
+  }
+
+  .formacoesTitle {
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  .formacoesTitle svg {
+    height: 40px;
+    width: auto;
+  }
+
+  /* Formacão Academica */
+
+  .formacaoAcademica {
+    margin-top: 0px;
+  }
+
+  .formacaoAcademicaBox {
+    display: flex;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 280px;
+    height: auto;
+    justify-content: space-between;
+    padding: 0px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .formacaoAcademicaInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+  }
+  
+  .formacaoAcademicaInfoLocal {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .formacaoAcademicaInfo span{
+    color: #6B18A7;
+    font-size: 1.2rem;
+  }
+  
+  .formacaoAcademicaInfo h1 {
+    color: #101010;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+    letter-spacing: 0px;  
+  }
+  
+  .formacaoAcademicaInfo h2 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-left: 12px;
+    text-wrap: wrap;
+  }
+  
+  .formacaoAcademicaData {
+    position: absolute;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    top: 75px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 130px;
+  }
+  
+  .formacaoAcademicaData h2 {
+    color: #101010;
+    font-weight: 500;
+    margin-top: 0px;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+  }
+  
+  .formacaoAcademicaData span {
+    color: #707070;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: var(--type-second);
+  }
+
+  .decoradores {
+    display: flex;
+    gap: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+    max-width: 240px;
+  }
+
+  .extraCurriculares {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .extraCurricularesBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 280px;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 10px;
+    height: auto;
+  }
+  
+  .extraCurricularesTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 160px;
+    justify-content: end;
+    color: #e9e9e9;
+    margin-top: 40px;
+  }
+
+  .extraCurricularesTitle svg{
+    height: 40px;
+    width: auto;
+  }
+  
+  .extraCurricularesTitle h1{
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.78px;
+  }
+  
+  .extraCurricularesSchoolTitle {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .extraCurricularesSchoolTitle h1{
+    color: #101010;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    font-size: 0.95rem;
+  }
+  
+  .extraCurricularesSchoolTitle span{
+    color: #6B18A7;
+    font-size: 1.2rem;
+  }
+  
+  .extraCurricularesCompetencia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232323;
+    padding: 14px;
+    border-radius: 10px;
+    position: relative;
+    cursor: default;
+    box-shadow: 3px 3px rgba(0,0,0,0.1);
+    transition: 0.4s;
+  }
+  
+  .extraCurricularesCompetencia h2 {
+    font-size:0.7rem;
+    font-weight: 400;
+    color: #e9e9e9;
+    margin-left: 4px;
+    min-width: 160px;
+  }
+  
+  .extraCurricularesCompetencia h2::before {
+    content: '';
+    width: 3px;
+    height: 18px;
+    background-color: #933FCF;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+  
+  .extraCurricularesCompetenciasBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .extraCurricularesCompetencia:hover {
+    transform: scale(1.03);
+    transition: 0.4s;
+  }
+  
+  .extraCurricularesCompetencia span {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #B65EF5;
+  }
+
+  .idiomas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .idiomasTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e9e9e9;
+  }
+  
+  .idiomasTitle h1{
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .idiomasTitle svg {
+    height: 20px;
+    width: auto;
+  }
+  
+  .idiomasDecBox {
+    align-items: center;
+    display: flex;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 280px;
+    padding: 0px;
+    margin-top: 20px;
+    gap: 150px;
+  }
+  
+  .idiomasBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .idioma {
+    display: flex;
+    background-color: #232323;
+    align-items: center;
+    padding: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    height: 50px;
+    width: 260px;
+    margin: 10px;
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
+    transition: 0.4s;
+    cursor: default;
+  }
+
+  .idioma:nth-child(1) {
+    margin-bottom: 0px;
+  }
+
+  .idioma:nth-child(2) {
+    margin-top: 0px;
+  }
+
+  .idioma:hover {
+    transform: none;
+    transition: 0;
+  }
+  
+  .idioma h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-wrap: nowrap;
+    color: #d1d1d1;
+  }
+  
+  .idioma span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #B65EF5;
+  }
+  
+  .idioma img {
+    width: auto;
+    height: 30px;
+  }
+  
+  .bigDecorador {
+    display: none;
+  }
+}

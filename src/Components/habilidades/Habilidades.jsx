@@ -17,6 +17,7 @@ import Discord from '../../Assets/logo/Habilidades/ui_ux_e_gerenciais/discord.sv
 import Figma from '../../Assets/logo/Habilidades/ui_ux_e_gerenciais/figma.svg?react'
 import Github from '../../Assets/logo/Habilidades/ui_ux_e_gerenciais/github.svg?react'
 import Trello from '../../Assets/logo/Habilidades/ui_ux_e_gerenciais/trello.svg?react'
+import NextJs from '../../Assets/logo/Habilidades/Front-end/nextjs.svg?react'
 
 const Habilidades = () => {
   return (
@@ -69,7 +70,12 @@ const Habilidades = () => {
               <div className={styles.habilidadeContainer}>
                 <ReactJS className={styles.habilidadeLogo}/>
               </div>
-            </div>          
+            </div>  
+            <div className={styles.habilidadesLineTwo}>
+              <div className={`${styles.habilidadeContainer}`}>
+                <NextJs className={styles.habilidadeLogo}/>
+              </div>
+            </div>        
           </div>
         </div>
       </div>
