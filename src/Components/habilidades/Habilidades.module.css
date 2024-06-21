@@ -105,6 +105,17 @@
   max-height: 100%;
 }
 
+.habilidadeLogoFiller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 101px;
+  height: 103px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
 .uiUx {
   justify-self: center;
   align-self: center;
@@ -251,6 +262,10 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+
+  .habilidadeLogoFiller {
+    display: none;
   }
 
   .frontEnd .habilidadesContainer {

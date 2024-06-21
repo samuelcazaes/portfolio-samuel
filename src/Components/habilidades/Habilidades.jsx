@@ -57,7 +57,7 @@ const Habilidades = () => {
         <div className={`${styles.frontEnd} ${styles.boxItem}`}>
           <h2 className={styles.subtitulo}>front-end</h2>
           <div className={styles.habilidadesContainer}>
-            <div className={styles.habilidadesLineZero}>
+            <div className={styles.habilidadesLineOne}>
               <div className={styles.habilidadeContainer}>
                 <Html5 className={styles.habilidadeLogo}/>
               </div>
@@ -70,12 +70,16 @@ const Habilidades = () => {
               <div className={styles.habilidadeContainer}>
                 <ReactJS className={styles.habilidadeLogo}/>
               </div>
-            </div>  
+            </div>
             <div className={styles.habilidadesLineTwo}>
-              <div className={`${styles.habilidadeContainer}`}>
+              <div className={styles.habilidadeLogoFiller}>      
+              </div>
+              <div className={styles.habilidadeContainer}>
                 <NextJs className={styles.habilidadeLogo}/>
               </div>
-            </div>        
+              <div className={styles.habilidadeLogoFiller}>
+              </div>
+            </div>
           </div>
         </div>
       </div>
