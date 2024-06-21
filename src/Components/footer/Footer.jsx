@@ -17,9 +17,9 @@ const Footer = () => {
          <a className= {`${styles.InfoItem} ${styles.github}`} rel="noreferrer" target="_blank" href="https://github.com/samuelcazaes"><GitHubLogo/> www.github.com/samuelcazaes</a>
         </div>
         <div className={styles.contactInfo}>    
-         <h1>contato<span>.</span></h1>
-         <a className= {`${styles.InfoItem} ${styles.email}`} >samuelcazaes@gmail.com<EmailIcon/></a>
-         <a className= {`${styles.InfoItem} ${styles.telefone}`}>(31) 9 9919-3389 <TelefoneIcon/></a>
+         <h1 className={`${styles.contactInfoTitle}`}>contato<span>.</span></h1>
+         <a className= {`${styles.InfoItem} ${styles.email}`}>samuelcazaes@gmail.com<EmailIcon className={styles.emailDesktop}/></a>
+         <a className={`${styles.InfoItem} ${styles.telefone}`}>(31) 9 9919-3389 <TelefoneIcon/></a>
         </div>
     </footer>
   )

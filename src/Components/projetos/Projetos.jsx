@@ -3,21 +3,32 @@ import Tip from '../../Assets/icons/dica.svg?react'
 import styles from './Projetos.module.css'
 import Portfolio from '../../Assets/imagens/Projetos/on/samuelcazaes_on.png'
 import PortfolioOFF from '../../Assets/imagens/Projetos/off/samuelcazaes_off.png'
+import PortfolioMobile from '../../Assets/imagens/Projetos/mobile/on/samuelcazaes_mobile_on.jpg'
+import PortfolioMobileOff from '../../Assets/imagens/Projetos/mobile/off/samuelcazaes_mobile_off.png'
 import PortfolioMiniature from '../../Assets/imagens/Projetos/miniatures/portfoliominiature.jpg'
 import AgileTrack from '../../Assets/imagens/Projetos/on/agiletrack_on.png'
 import AgileTrackOFF from '../../Assets/imagens/Projetos/off/agiletrack_off.png'
+import AgileTrackMobile from '../../Assets/imagens/Projetos/mobile/on/agiletrack_mobile_on.png'
+import AgileTrackMobileOff from '../../Assets/imagens/Projetos/mobile/off/agiletrack_mobile_off.png'
 import AgileTrackMiniature from '../../Assets/imagens/Projetos/miniatures/agiletrackminiature.jpg'
 import VisiteQueluzito from '../../Assets/imagens/Projetos/on/visitequeluzito_on.png'
 import VisiteQueluzitoOFF from '../../Assets/imagens/Projetos/off/visitequeluzito_off.png'
+import VisiteQueluzitoMobile from '../../Assets/imagens/Projetos/mobile/on/visitequeluzito_mobile_on.png'
+import VisiteQueluzitoMobileOff from '../../Assets/imagens/Projetos/mobile/off/visitequeluzito_mobile_off.png'
 import VisiteQueluzitoMiniature from '../../Assets/imagens/Projetos/miniatures/visitequeluzitominiature.jpg'
 import AmarilFranklin from '../../Assets/imagens/Projetos/on/amarilfranklin_on.png'
 import AmarilFranklinOFF from '../../Assets/imagens/Projetos/off/amarilfranklin_off.png'
+import AmarilFranklinMobile from '../../Assets/imagens/Projetos/mobile/on/amarilfranklin_mobile_on.png'
+import AmarilFranklinMobileOff from '../../Assets/imagens/Projetos/mobile/off/amarilfranklin_mobile_off.png'
 import AmarilFranklinMiniature from '../../Assets/imagens/Projetos/miniatures/amarilfranklinminiature.jpg'
 import Setinha from '../../Assets/icons/seta_botao.svg?react'
 
 const Projetos = () => {
 
   const [infoDisplay, setInfoDisplay] = React.useState('portfolio');
+  const [width, setWidth] = React.useState(window.innerWidth); 
+
+  console.log(width);
 
   return (
     <section id={'projetos'} className={`${styles.projetosBox} container`}>
@@ -26,7 +37,36 @@ const Projetos = () => {
         <Tip/>
         <span>clique nos projetos abaixo para saber mais sobre eles</span>
         </div>
-        <div className={styles.projetosItemsBox}>
+          <h1 className={`${styles.detailsProjetosTitle} ${styles.sectionTitleMobile}`}>projetos<span>.</span></h1>
+        { width <= 430 ?
+          <div className={styles.projetosItemsBox}>
+            <div onClick={() => setInfoDisplay('portfolio')} className={styles.projetosItem}>
+              {infoDisplay === 'portfolio' ? 
+                <h1 className={styles.selectedTitle}>portfólio</h1> : <h1>portfólio</h1>}
+              {infoDisplay === 'portfolio' ? 
+                <img className={styles.selected} src={PortfolioMobile} alt="" /> : <img src={PortfolioMobileOff} alt="" />}            
+            </div>
+            <div onClick={() => setInfoDisplay('agileTrack')} className={styles.projetosItem}>
+              {infoDisplay === 'agileTrack' ?
+                <h1 className={styles.selectedTitle}>agile track</h1> : <h1>agile track</h1>}
+              {infoDisplay === 'agileTrack' ? 
+                <img  className={styles.selected} src={AgileTrackMobile} alt="" /> : <img src={AgileTrackMobileOff} alt="" />} 
+            </div>
+            <div onClick={() => setInfoDisplay('visiteQueluzito')} className={styles.projetosItem}>
+              {infoDisplay === 'visiteQueluzito' ? 
+                <h1 className={styles.selectedTitle}>visite queluzito</h1> : <h1>visite queluzito</h1>}
+              {infoDisplay === 'visiteQueluzito' ?
+                <img  className={styles.selected} src={VisiteQueluzitoMobile} alt="" /> : <img src={VisiteQueluzitoMobileOff} alt="" />}
+            </div>
+            <div onClick={() => setInfoDisplay('amarilFranklin')} className={styles.projetosItem}>
+            {infoDisplay === 'amarilFranklin' ? 
+              <h1 className={styles.selectedTitle}>amaril franklin</h1> : <h1>amaril franklin</h1>}
+            {infoDisplay === 'amarilFranklin' ?
+              <img className={styles.selected} src={AmarilFranklinMobile} alt="" /> : <img src={AmarilFranklinMobileOff} alt="" />}          
+            </div>
+          </div> 
+          :
+          <div className={styles.projetosItemsBox}>
           <div onClick={() => setInfoDisplay('portfolio')} className={styles.projetosItem}>
             {infoDisplay === 'portfolio' ? 
               <h1 className={styles.selectedTitle}>portfólio</h1> : <h1>portfólio</h1>}
@@ -51,11 +91,13 @@ const Projetos = () => {
           {infoDisplay === 'amarilFranklin' ?
             <img className={styles.selected} src={AmarilFranklin} alt="" /> : <img src={AmarilFranklinOFF} alt="" />}          
           </div>
-        </div>
+          </div>
+        }
       </div>
+      
       <div className={styles.rightBox}>
         <div className={styles.detailsBox}>
-          <h1 className={styles.detailsProjetosTitle}>projetos<span>.</span></h1>
+          <h1 className={`${styles.detailsProjetosTitle} ${styles.sectionTitleDesktop}`}>projetos<span>.</span></h1>
         </div>
         <div className={styles.miniatureBox}>
           {infoDisplay === 'portfolio' ? <img key={Math.random()} src={PortfolioMiniature} alt="" />
@@ -65,7 +107,6 @@ const Projetos = () => {
           }
           
         </div>
-
         <div className={styles.textBox}>
           {infoDisplay === 'portfolio' ? <h2 key={Math.random()}>Portfólio</h2> 
           : infoDisplay === 'agileTrack' ? <h2 key={Math.random()}>Agile Track</h2>
