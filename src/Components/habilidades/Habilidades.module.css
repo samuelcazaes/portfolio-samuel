@@ -366,7 +366,7 @@
   }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 420px) {
   .titulo {
     padding-top: 40px;
     margin-top: 40px;
